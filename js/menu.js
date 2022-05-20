@@ -1,7 +1,8 @@
 function responseMenu(){
 	$('ul.menu__more-list li.menu__item').appendTo('ul.menu__list');
 	var items = $('ul.menu__list li.menu__item');
-	var max_width = $('ul.menu__list').width() - $('ul.menu__list li.menu__more').outerWidth();
+	var max_width = $('ul.menu__list').width() - $('.menu__more').outerWidth();
+	// var max_width = $('ul.menu__list').width();
 	var width = 0;
 	var hide_from = 0;
 

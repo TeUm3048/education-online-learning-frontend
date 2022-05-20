@@ -41,18 +41,26 @@
   fill: #fff;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+}
+
 .menu__list {
+  max-width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 8px;
   white-space: nowrap;
+}
+
+.menu__item + .menu__item {
+  padding-left: 8px;
 }
 
 .menu__link {
@@ -82,6 +90,10 @@
 
 .menu__link--active, .menu__more-btn--active {
   color: #787878;
+}
+
+.menu__more {
+  padding-left: 8px;
 }
 
 .menu__more-list {
