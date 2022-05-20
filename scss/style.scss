@@ -1,0 +1,36 @@
+@import 'header';
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* text/01 | 18 Reg | PC */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+
+    color: #000000;
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+
+
+
+
