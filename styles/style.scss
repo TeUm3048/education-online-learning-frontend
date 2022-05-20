@@ -1,0 +1,194 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    /* text/01 | 18 Reg | PC */
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+
+    color: #000000;
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.header {
+    padding: 16px 0;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__file-documents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 16px;
+        padding: 5px 0 4px;
+        width: 177px;
+        height: 30px;
+
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 22px;
+        /* identical to box height, or 200% */
+
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+
+        /* text/00 */
+
+        color: #FFFFFF;
+        background: #000000;
+        border-radius: 4px;
+
+        &:hover {
+            background: #252525;
+        }
+    }
+}
+
+.social {
+    height: 40px;
+
+
+    &__link {
+        width: 36px;
+        height: 36px;
+        padding: 8px;
+        border-radius: 50%;
+        display: inline-flex;
+        margin: 2px 16px;
+
+        // &+& {
+        //     margin-left: 16px;
+        // }
+
+        &:hover {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            margin: 0 14px;
+
+        }
+
+        &--vk {
+            background-color: #3F8AE0;
+        }
+
+        &--instagram {
+            background: radial-gradient(65% 65% at 20% 90%, #FFD43D 0%, rgba(247, 95, 43, 0.12) 100%)
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+                ,
+                linear-gradient(167.77deg, #3350F3 5.05%, #D41EB0 52.59%, #F8214E 91.1%);
+        }
+
+        &--whatsapp {
+            background-color: #00D15D;
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+
+        path {
+            fill: #fff;
+        }
+    }
+}
+
+.phone {
+    margin-left: 16px;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    gap: 8px;
+
+    &__avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+}
+
+.menu {
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &__item {}
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__more-btn {
+        border: none;
+    }
+
+    &__link,
+    &__more-btn {
+        // display: inline-flex;
+        // justify-content: center;
+        // align-items: center;
+        text-align: center;
+        padding: 0px 12px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height, or 138% */
+
+        letter-spacing: 0.01em;
+
+        background: #F2F2F2;
+        border-radius: 28px;
+
+        &:hover {
+            background: #ECECEC;
+        }
+
+        &--active {
+            color: #787878;
+        }
+    }
+
+    
+}
