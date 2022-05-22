@@ -1,20 +1,63 @@
 @import "social";
 @import "menu";
+@import "phone";
+@import "burger";
 
 
 .header {
     padding: 16px 0;
+    position: relative;
 
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 670px) {
+            margin-left: 48px;
+        }
     }
 
     &__section {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+
+    &__burger {
+        position: absolute;
+        left: 16px;
+        top: 24px;
+    }
+
+    &__link {
+        &--vk {
+            @media (max-width: 670px) {
+                display: none;
+            }
+        }
+
+        &--instagram {
+            @media (max-width: 670px) {
+                display: none;
+            }
+        }
+
+        &--tel {
+            display: none;
+
+            @media (max-width: 1024px) {
+                display: flex;
+            }
+        }
+    }
+
+    &__phone {
+        margin-left: 32px;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
 
     &__file-documents {
@@ -43,27 +86,18 @@
         &:hover {
             background: #252525;
         }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 }
 
-
-.phone {
-    text-decoration: none;
-    color: inherit;
-    font-size: 16px;
-    line-height: 22px;
-    /* identical to box height, or 138% */
-    letter-spacing: 0.01em;
-
-    margin-left: 16px;
-    display: flex;
-
-    align-items: center;
-    gap: 8px;
-
-    &__avatar {
-        width: 36px;
-        height: 36px;
+.logo {
+    &__img {
+        height: 40px;
+        @media (max-width: 768px) {
+            height: 32px;
+        }
     }
-
 }

@@ -1,24 +1,22 @@
 .social {
     height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 
-    .social__link {
+    &__link {
+        position: relative;
         width: 36px;
         height: 36px;
-        padding: 8px;
         border-radius: 50%;
-        display: inline-flex;
-        margin: 2px 16px;
+        display: flex;
+        transition: all .03s;
 
-        // &+& {
-        //     margin-left: 16px;
-        // }
 
         &:hover {
             width: 40px;
             height: 40px;
-            padding: 10px;
-            margin: 0 14px;
-
+            margin: 0 -2px;
         }
 
         &--vk {
@@ -26,23 +24,33 @@
         }
 
         &--instagram {
-            background: radial-gradient(65% 65% at 20% 90%, #FFD43D 0%, rgba(247, 95, 43, 0.12) 100%)
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-                ,
+            background: radial-gradient(65% 65% at 20% 90%, #FFD43D 0%, rgba(247, 95, 43, 0.12) 100%),
                 linear-gradient(167.77deg, #3350F3 5.05%, #D41EB0 52.59%, #F8214E 91.1%);
         }
 
         &--whatsapp {
             background-color: #00D15D;
         }
+
+        &--tel {
+            background: #F2F2F2;
+        }
     }
 
-    .social__icon {
+    &__icon {
         width: 20px;
         height: 20px;
-
+        position: absolute;
+        left: calc(50% - 20px/2);
+        top: calc(50% - 20px/2);
         path {
             fill: #fff;
+        }
+
+        &--tel {
+            path {
+                fill: #252525;
+            }
         }
     }
 }
