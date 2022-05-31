@@ -1,0 +1,95 @@
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+
+    &--big {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.button {
+    text-decoration: none;
+    height: 30px;
+
+
+    /* Auto layout */
+
+    display: flex;
+    align-items: center;
+    padding: 5px 12px 4px;
+    gap: 8px;
+    border-radius: 4px;
+    width: max-content;
+
+    /* button/01 | 11 Caps | PC */
+
+    font-weight: 700;
+
+    border: 1px solid rgba(0, 0, 0, 0.12);
+
+    /* text/01 */
+
+    color: #000000;
+    font-size: 11px;
+    line-height: 22px;
+
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+
+    &:hover {
+        color: #4A4A4A;
+    }
+
+    &--background--black {
+        background: #000000;
+        color: #fff;
+
+        &:hover {
+            color: #fff;
+            background: #252525;
+        }
+    }
+
+
+    &--size--large {
+        font-size: 16px;
+        line-height: 22px;
+
+        letter-spacing: 0.01em;
+        text-transform: none;
+    }
+}
+
+.icon {
+    width: 10px;
+    height: 10px;
+}
+
+#overlay {
+    &::after {
+        content: "";
+        display: block;
+        position: fixed;
+        /* could also be absolute */
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(20px);
+    }
+}
+
+.section {
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 51px;
+        color: #000000;
+    }
+}

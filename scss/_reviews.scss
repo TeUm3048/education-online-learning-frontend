@@ -1,0 +1,161 @@
+.review {
+    // min-width: 488px;
+
+    height: 496px;
+
+    &.active {
+        width: 800px;
+        height: auto;
+        position: fixed;
+        margin: auto;
+        z-index: 101;
+        left: 50vw;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+    }
+
+    &.active & {
+        &__consult {
+            color: #fff;
+            border-color: rgba(223, 223, 222, 0.3);
+        }
+
+        &__caption {
+            color: #fff;
+        }
+    }
+
+    &__text-wrapper {
+        padding: 32px 40px;
+        height: 376px;
+        background: #F2F2F2;
+
+
+    }
+
+    &__text {
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+
+
+        &--overflowed {
+
+            // mask-image: linear-gradient(to bottom, black 60%, transparent 80%);
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 40%;
+                background: linear-gradient(transparent, #F2F2F2);
+            }
+
+            // mask-image: linear-gradient(180deg, #F2F2F2 61.47%, rgba(242, 242, 242, 0) 97.2%);
+
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     display: block;
+            //     left: 0;
+            //     top: 0;
+            //     height: 100%;
+            //     width: 100%;
+            //     // background: linear-gradient(180deg,  rgba(245, 245, 245, 0)  61.47%, #F5F5F5 97.2%);
+            // }
+
+        }
+    }
+
+    &__info {}
+
+    &__avatar {}
+
+    &__social {}
+
+    &__caption {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+
+        letter-spacing: 0.01em;
+
+
+        color: #000000;
+    }
+
+
+
+
+    &__description {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 22px;
+
+        color: #787878;
+
+    }
+
+    &__consult {}
+
+}
+
+.horizontal-review {
+
+
+    &__info {
+        display: flex;
+        margin-top: 32px;
+    }
+
+    &__info-icons {
+        width: 88px;
+        position: relative;
+
+    }
+
+    &__info-card {
+        margin-left: 16px;
+
+    }
+
+    &__avatar {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__social {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__consult {
+        margin-top: 12px;
+    }
+}
+
+.reviews {
+
+    // MUST BE REDESIGNED!
+    &__slides {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 32px;
+        overflow-x: auto;
+        // justify-content: center;
+
+    }
+
+    &__slide {
+        min-width: 488px;
+    }
+}

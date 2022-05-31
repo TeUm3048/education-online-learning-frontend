@@ -1,25 +1,25 @@
 .social {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
+
 
     &__link {
         position: relative;
         width: 36px;
         height: 36px;
         border-radius: 50%;
-        display: flex;
+        display: inline-flex;
         transition: all .03s;
 
+        
 
-        &:hover {
-            width: 40px;
-            height: 40px;
-            margin: 0 -2px;
+        &--big {
+            width: 50px;
+            height: 50px;
+            
+
         }
 
         &--vk {
+            color: #fff;
             background-color: #3F8AE0;
         }
 
@@ -43,14 +43,17 @@
         position: absolute;
         left: calc(50% - 20px/2);
         top: calc(50% - 20px/2);
-        path {
-            fill: #fff;
+        fill: #fff;
+
+        &--big {
+            width: 24px;
+            height: 24px;
+            left: calc(50% - 24px/2);
+            top: calc(50% - 24px/2);
         }
 
         &--tel {
-            path {
-                fill: #252525;
-            }
+            fill: #252525;
         }
     }
 }

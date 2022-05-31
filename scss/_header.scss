@@ -30,7 +30,20 @@
         top: 24px;
     }
 
+    &__social {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
     &__link {
+        &:hover {
+            width: 40px;
+            height: 40px;
+            margin: 0 -2px;
+        }
+
         &--vk {
             @media (max-width: 670px) {
                 display: none;
@@ -61,31 +74,7 @@
     }
 
     &__file-documents {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin-left: 16px;
-        padding: 5px 0 4px;
-        width: 177px;
-        height: 30px;
-
-        font-weight: 700;
-        font-size: 11px;
-        line-height: 22px;
-
-        letter-spacing: 0.17em;
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-
-
-        color: #FFFFFF;
-        background: #000000;
-        border-radius: 4px;
-
-        &:hover {
-            background: #252525;
-        }
 
         @media (max-width: 576px) {
             display: none;
@@ -96,6 +85,7 @@
 .logo {
     &__img {
         height: 40px;
+
         @media (max-width: 768px) {
             height: 32px;
         }
